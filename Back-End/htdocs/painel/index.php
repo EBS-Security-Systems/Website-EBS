@@ -41,7 +41,7 @@ include('protect.php');
                 margin-inline: 10px;
             ">Encryption's Builder Studio, agora na versão web!</code>
         </header>
-
+        <a href="logout.php">Sair</a>
         <section class="jumbotron container" style="border-radius: 10px; padding-block: 15px;">
             <ul class="nav nav-tabs">
                 <li class="active"><a data-toggle="tab" href="#home">Perfil <span class="glyphicon glyphicon-user"></span></a></li>
