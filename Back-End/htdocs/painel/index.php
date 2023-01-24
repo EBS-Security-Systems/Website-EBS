@@ -1,8 +1,9 @@
 <?php
-
+include('../php/class.php');
 include('protect.php');
 
-
+$cls = new database;
+$User = $cls->GetUser($_SESSION['ID_USER']);
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -61,9 +62,9 @@ include('protect.php');
                             <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#ModalPhoto">Alterar foto <span class="glyphicon glyphicon-camera"></span></button>
                        </div>
                     <div class="col-sm-10">                    
-                        <h4><span class="glyphicon glyphicon-user"></span> Nome: </h4>
-                        <h4><span class="glyphicon glyphicon-envelope"></span> E-mail: <a href="mailto:"></a></h4>
-                        <h4><span class="glyphicon glyphicon-calendar"></span> Conta criada em: </h4>
+                        <h4><span class="glyphicon glyphicon-user"></span> Nome: <?php echo(User[1]);?></h4>
+                        <h4><span class="glyphicon glyphicon-envelope"></span> E-mail: <?php echo(User[2]);?><a href="mailto:<?php echo(User[2]);?>"></a></h4>
+                        <h4><span class="glyphicon glyphicon-calendar"></span> Conta criada em: <?php echo(User[5]);?></h4>
                         <h4><span class="glyphicon glyphicon-thumbs-up"></span> Likes no EBS: </h4>
                     </div>
                     <div id="ModalPhoto" class="modal fade" role="dialog">
@@ -174,9 +175,9 @@ include('protect.php');
                     </div>
                     <div class="col-sm-4" style="text-align: initial">
                         <h3>Navegação</h3>
-                        <p>&gt; <a href="https://ebs-systems.com/" style="color: white">Home</a></p>
-                        <p>&gt; <a href="https://ebs-systems.com/login" style="color: white">Login</a></p>
-                        <p>&gt; <a href="https://ebs-systems.com/insert-user" style="color: white">Criar conta</a></p>
+                        <p>&gt; <a href="https://ebs-systems.epizy.com/" style="color: white">Home</a></p>
+                        <p>&gt; <a href="https://ebs-systems.epizy.com/login" style="color: white">Login</a></p>
+                        <p>&gt; <a href="https://ebs-systems.epizy.com/insert-user" style="color: white">Criar conta</a></p>
                     </div>
                     <div class="col-sm-4" style="text-align: initial">
                         <h3>Contato</h3>
