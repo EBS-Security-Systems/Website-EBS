@@ -38,5 +38,20 @@
                 return false;
             }
         }
+
+        public function GetUser($id)
+        {
+            try {
+                
+                global $pdo;
+                global $msg;
+                $sql = $pdo->prepare("SELECT * FROM CONTAS WHERE ID_USER = ".$id);  //Consulta
+                $sql->execute(); // Execução
+                $dados = $sql->fetch();                
+                return $dados;
+            } catch (PDOException $e) {
+                $msg = $e->getMessage();
+            }            
+        }
     }
 ?>
