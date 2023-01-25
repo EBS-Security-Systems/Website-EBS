@@ -97,8 +97,9 @@ $date = strtotime($input);
     <section class="jumbotron container" style="border-radius: 10px; padding-block: 15px;">
       <ul class="nav nav-tabs">
         <li class="active"><a data-toggle="tab" href="#home">Perfil <span class="glyphicon glyphicon-user"></span></a></li>
-        <li><a data-toggle="tab" href="#menu1">Aplicações <span class="glyphicon glyphicon-cog"></span></a></li>
-        <li><a data-toggle="tab" href="#menu2">Sobre <span class="glyphicon glyphicon-book"></span></a></li>
+        <li><a data-toggle="tab" href="#aplications">Aplicações <span class="glyphicon glyphicon-cog"></span></a></li>
+        <li><a data-toggle="tab" href="#services">Serviços <span class="glyphicon glyphicon-edit"></span></a></li>
+        <li><a data-toggle="tab" href="#info">Sobre <span class="glyphicon glyphicon-book"></span></a></li>
         <li><a href="/painel/logout.php">Sair <span class="glyphicon glyphicon-log-out"></span></a></li>
       </ul>
 
@@ -184,8 +185,8 @@ $date = strtotime($input);
               </div>               
             </div>  
           </div></div>
-        <div id="menu1" class="tab-pane fade">
-          <h2 class="text-center">Catálogo de produtos</h2>
+        <div id="aplications" class="tab-pane fade">
+          <h2>Aplicações publicadas</h2>
           <hr style="margin-block-start: 10px; border: 0; border-top: 3px solid black;">
           <section class="row" style="max-width: 100%;text-align: center;margin-inline: 0px;">
             <div class="col-sm-6" style="text-align: center;">
@@ -202,7 +203,29 @@ $date = strtotime($input);
             </div>                                                
           </section>
         </div>
-        <div id="menu2" class="tab-pane fade">
+        
+        <div id="services" class="tab-pane fade">
+          <h2>
+            Nossos serviços
+          </h2>
+          <hr style="margin-block-start: 10px; border: 0; border-top: 3px solid black;">
+          <section class="row" style="max-width: 100%;text-align: center;margin-inline: 0px;">
+            <div class="col-sm-6" style="text-align: center;">
+              <img src="https://gifs.eco.br/wp-content/uploads/2022/08/gif-animado-site-em-construcao-4.gif" class="img-fluid" alt="Imagem responsiva" style="max-width: 90%; margin-block-end: 10px;margin-inline: 4%;">
+            </div>
+
+
+            <div class="col-sm-6">
+              <div class="jumbotron mycss text-center" style="margin-inline: 5%;border-radius: 10px;margin-block: 15%;">
+                <h3 style="color: white">Sistemas em construção</h3>
+                <p>Estamos em obras!!!</p>
+                <p>Em breve novas atualizações...</p>
+              </div>
+            </div>                                                
+          </section>
+        </div>
+
+        <div id="info" class="tab-pane fade">
           <h2>Sobre a EBS Security Systems </h2>
           <hr style="margin-block-start: 10px; border: 0; border-top: 3px solid black;">
           <p style="text-align: justify">&nbsp&nbsp&nbsp&nbsp&nbspA <strong>Encryption's Builder Studio Security Systems</strong> é nada mais que uma pequena <i>startup</i> que está começando no mercado de trabalho de tecnologia.
