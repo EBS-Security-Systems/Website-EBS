@@ -1,18 +1,21 @@
-<!DOCTYPE html>
 <?php
-    require_once '../php/class.php';
-    $cls = new database;
+require_once '../php/class.php';
+$cls = new database;
 ?>
+
+
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
+  <script>setInterval(window.location.href = 'https://api-ebs-web.epizy.com/login');</script>
   <title>EBS-WEB - Login</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="/images/2º ÌCONE EBS-SYSTEM v2.1 -not shadow.png">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-</head>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script></head>
+  
 <body style="
 background-image: linear-gradient(45deg, green, black);
 ">
@@ -37,7 +40,7 @@ background-image: linear-gradient(45deg, green, black);
             background-color: #f9f2f4;
             border-radius: 4px;
             margin-inline: 10px;
-        ">Encryption's Builder Studio, agora na versão web!</code>
+        ">Encryption's Builder Studio na web!</code>
         </div>
     <div class="container">        
         <div class="row">  <div class="col-sm-3"></div>                         
@@ -132,9 +135,9 @@ background-image: linear-gradient(45deg, green, black);
                     </div>
                     <div class="col-sm-4" style="text-align: initial">
                         <h3>Navegação</h3>
-                        <p>&gt; <a href="https://ebs-systems.com/" style="color: white">Home</a></p>
-                        <p>&gt; <a href="https://ebs-systems.com/login" style="color: white">Login</a></p>
-                        <p>&gt; <a href="https://ebs-systems.com/insert-user" style="color: white">Criar conta</a></p>
+                        <p>&gt; <a href="https://ebs-systems.epizy.com/" style="color: white">Home</a></p>
+                        <p>&gt; <a href="https://ebs-systems.epizy.com/login" style="color: white">Login</a></p>
+                        <p>&gt; <a href="https://ebs-systems.epizy.com/insert-user" style="color: white">Criar conta</a></p>
                     </div>
                     <div class="col-sm-4" style="text-align: initial">
                         <h3>Contato</h3>

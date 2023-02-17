@@ -3,8 +3,6 @@
     {
         private $pdo;
         public $msg = "";
-        public $dadosDaCompra = "";
-        public $dadosDaCompra2 = "";
         public function conectar($nome, $host, $user, $password)
         {
             global $pdo;
@@ -38,20 +36,26 @@
                 return false;
             }
         }
+      
+      
+      public function GetUser($id)
+      {
+        try {
 
-        public function GetUser($id)
-        {
-            try {
-                
-                global $pdo;
-                global $msg;
-                $sql = $pdo->prepare("SELECT * FROM CONTAS WHERE ID_USER = ".$id);  //Consulta
-                $sql->execute(); // Execução
-                $dados = $sql->fetch();                
-                return $dados;
-            } catch (PDOException $e) {
-                $msg = $e->getMessage();
-            }            
-        }
+          $servidor = 'sql305.epizy.com';
+          $username = 'epiz_33009677';
+          $password = 'YRZT7sWOmZNP4Ge';
+          $database = 'epiz_33009677_Users';
+          $conexao = mysql_connect($servidor, $username, $password) 
+            or die("Erro ao conectar ao banco de dados");
+          $db = mysql_select_db($database)
+            or die("Erro ao selecionar banco de dados");
+          $query = mysql_query("SELECT * FROM CONTAS WHERE ID_USER = ".$id);
+             
+          return mysql_fetch_array($query);
+        } catch (Exception $e) {
+          $msg = $e->getMessage();
+        }            
+      }
     }
 ?>

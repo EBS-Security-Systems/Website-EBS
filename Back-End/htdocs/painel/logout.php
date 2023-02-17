@@ -6,6 +6,4 @@ if(!isset($_SESSION)) {
 
 session_destroy();
 
-header("Location: https://ebs-systems.epizy.com/login");
-
-?>
+header("Location: /login");

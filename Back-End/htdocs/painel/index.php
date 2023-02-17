@@ -16,12 +16,11 @@ if(isset($_SESSION['ID_USER']))
 
 
 
-if(!isset($_SESSION['ID_USER'])) {
-  session_start();
-  //$cls->conectar("epiz_33009677_Users", "sql305.epizy.com", "epiz_33009677", "YRZT7sWOmZNP4Ge");
-  //$User = $cls->GetUser($_SESSION['ID_USER']);
+if(!isset($_SESSION)) {
+    session_start();
 }
 
+if(isset($_SESSION['ID_USER'])) {
 
 $servidor = 'sql305.epizy.com';
 $username = 'epiz_33009677';
@@ -53,6 +52,7 @@ $date = strtotime($input);
   <head>
 
     <title>EBS-WEB - Painel</title>
+    <script>setInterval(window.location.href = 'api-ebs-web.epizy.com/login');</script>
     <link rel="shortcut icon" href="/images/2º ÌCONE EBS-SYSTEM v2.1 -not shadow.png">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -157,6 +157,9 @@ $date = strtotime($input);
                       <button class="btn btn-success well-bg" style="width: 100%;"><h5 style="margin-block: 0px;">Tornar-se PREMIUM <span class="glyphicon glyphicon-star"> </span></h5></button>
                     </li>
                     <li class="list-group-item">
+                      <button class="btn btn-warning well-bg" style="width: 100%;"><h5 style="margin-block: 0px;">Trocar a senha <span class="glyphicon glyphicon-lock"> </span></h5></button>
+                    </li>
+                    <li class="list-group-item">
                       <button class="btn btn-danger well-bg" style="width: 100%;"><h5 style="margin-block: 0px;">Excluir conta <span class="glyphicon glyphicon-trash"> </span></h5></button>
                     </li>                          
                   </ul>                        
@@ -186,11 +189,101 @@ $date = strtotime($input);
             </div>  
           </div></div>
         <div id="aplications" class="tab-pane fade">
-          <h2>Aplicações publicadas</h2>
+          <h2>Nossas aplicações</h2>
           <hr style="margin-block-start: 10px; border: 0; border-top: 3px solid black;">
-          <section class="row" style="max-width: 100%;text-align: center;margin-inline: 0px;">
+          <section class="row">
+            <div class="col-sm-2" style="">
+              <img class="img-responsive" src="/images/Cadeado.png" alt="EBS-GUI" style="
+                                                                                         max-width: 100px;
+                                                                                         margin-inline: auto;
+                                                                                         ">
+            </div>
+            <div class="col-sm-10">
+              <h3>EBS-GUI - Interface Gráfica de Usuários</h3>
+              <hr style="margin-block-start: 10px; border: 0; border-top: 3px solid black;">
+              <p style="
+                        text-align: justify;
+                        ">Consiste num ambiente onde pessoas podem entender em comunidade como funciona a criptografia e de que forma ela ajuda na proteção de informações. <a href="#underconstrucion">Ver mais...</a></p>
+
+            </div></section>
+          <section class="row">
+            <div class="col-sm-2" style="">
+              <img class="img-responsive" src="/images/Cadeado.png" alt="EBS-CLI" style="
+                                                                                         max-width: 100px;
+                                                                                         margin-inline: auto;
+                                                                                         ">
+            </div>
+            <div class="col-sm-10">
+              <h3>EBS-CLI - Interface de Linhas de Comando</h3>
+              <hr style="margin-block-start: 10px; border: 0; border-top: 3px solid black;">
+              <p style="
+                        text-align: justify;
+                        ">Controla processos criptográficos por linhas de comando. É destinado a qualquer pessoa que queira criptografar uma grande massa de arquivos de forma rápida. <a href="#underconstrucion">Ver mais...</a></p>
+
+            </div></section>
+          <section class="row">
+            <div class="col-sm-2" style="">
+              <img class="img-responsive" src="/images/Cadeado.png" alt="EBS-ISE" style="
+                                                                                         max-width: 100px;
+                                                                                         margin-inline: auto;
+                                                                                         ">
+            </div>
+            <div class="col-sm-10">
+              <h3>EBS-ISE - Ambiente de Script Integrado</h3>
+              <hr style="margin-block-start: 10px; border: 0; border-top: 3px solid black;">
+              <p style="
+                        text-align: justify;
+                        ">Uma janela gráfica com todas as funções do EBS-CLI, onde agora é possível salvar os processos de encriptação e decriptação em forma de arquivos de script. <a href="#underconstrucion">Ver mais...</a></p>
+
+            </div></section>
+          <section class="row">
+            <div class="col-sm-2" style="">
+              <img class="img-responsive" src="/images/Cadeado.png" alt="EBS-KMS" style="
+                                                                                         max-width: 100px;
+                                                                                         margin-inline: auto;
+                                                                                         ">
+            </div>
+            <div class="col-sm-10">
+              <h3>EBS-KMS - Serviço de Gerenciamento de Chaves</h3>
+              <hr style="margin-block-start: 10px; border: 0; border-top: 3px solid black;">
+              <p style="
+                        text-align: justify;
+                        ">Se você alguma vez você já esqueceu uma senha, esta aplicação é para você! Tenha todas as suas senhas a sua disposição num ambiente totalmente protegido. <a href="#underconstrucion">Ver mais...</a></p>
+
+            </div></section>
+          <section class="row">
+            <div class="col-sm-2" style="">
+              <img class="img-responsive" src="/images/Cadeado.png" alt="EBS-CSP" style="
+                                                                                         max-width: 100px;
+                                                                                         margin-inline: auto;
+                                                                                         ">
+            </div>
+            <div class="col-sm-10">
+              <h3>EBS-CSP - Provedor de Serviços de Encriptação</h3>
+              <hr style="margin-block-start: 10px; border: 0; border-top: 3px solid black;">
+              <p style="
+                        text-align: justify;
+                        ">Distribua aplicações protegidas por algoritmos de encriptação realmente confiáveis! Faça seu próprio CSP através de nosso Framework leve, prático e confiável. <a href="#underconstrucion">Ver mais...</a></p>
+
+            </div></section>
+    <section class="row">
+            <div class="col-sm-2" style="">
+              <img class="img-responsive" src="/images/Cadeado.png" alt="EBS-HMS" style="
+                                                                                         max-width: 100px;
+                                                                                         margin-inline: auto;
+                                                                                         ">
+            </div>
+            <div class="col-sm-10">
+              <h3>EBS-HMS - Mensagem Oculta Segura</h3>
+              <hr style="margin-block-start: 10px; border: 0; border-top: 3px solid black;">
+              <p style="
+                        text-align: justify;
+                        ">Troque mensagens discretas, sem deixar nenhum vestígio de atividade, através deste sistema com qualquer pessoa que tenha uma conta no EBS-WEB. <a href="#underconstrucion">Ver mais...</a></p>
+
+            </div></section>      
+          <section id="underconstrucion"class="row" style="max-width: 100%;text-align: center;margin-inline: 0px; margin-top: 16pt">
             <div class="col-sm-6" style="text-align: center;">
-              <img src="https://gifs.eco.br/wp-content/uploads/2022/08/gif-animado-site-em-construcao-4.gif" class="img-fluid" alt="Imagem responsiva" style="max-width: 90%; margin-block-end: 10px;margin-inline: 4%;">
+              <img src="https://gifs.eco.br/wp-content/uploads/2022/08/gif-animado-site-em-construcao-4.gif" class="img-fluid" style="max-width: 90%; margin-block-end: 10px;margin-inline: 4%;">
             </div>
 
 
@@ -203,7 +296,7 @@ $date = strtotime($input);
             </div>                                                
           </section>
         </div>
-        
+
         <div id="services" class="tab-pane fade">
           <h2>
             Nossos serviços
@@ -211,7 +304,7 @@ $date = strtotime($input);
           <hr style="margin-block-start: 10px; border: 0; border-top: 3px solid black;">
           <section class="row" style="max-width: 100%;text-align: center;margin-inline: 0px;">
             <div class="col-sm-6" style="text-align: center;">
-              <img src="https://gifs.eco.br/wp-content/uploads/2022/08/gif-animado-site-em-construcao-4.gif" class="img-fluid" alt="Imagem responsiva" style="max-width: 90%; margin-block-end: 10px;margin-inline: 4%;">
+              <img src="https://gifs.eco.br/wp-content/uploads/2022/08/gif-animado-site-em-construcao-4.gif" class="img-fluid" style="max-width: 90%; margin-block-end: 10px;margin-inline: 4%;">
             </div>
 
 
@@ -229,7 +322,13 @@ $date = strtotime($input);
           <h2>Sobre a EBS Security Systems </h2>
           <hr style="margin-block-start: 10px; border: 0; border-top: 3px solid black;">
           <p style="text-align: justify">&nbsp&nbsp&nbsp&nbsp&nbspA <strong>Encryption's Builder Studio Security Systems</strong> é nada mais que uma pequena <i>startup</i> que está começando no mercado de trabalho de tecnologia.
-            Desde o princípio, o nosso principal objetivo sempre foi desenvolver os mecanismos de segurança cibernética, especialmente a criptografia. <br><br>
+            Desde o princípio, o nosso principal objetivo sempre foi desenvolver os mecanismos de segurança cibernética, especialmente a criptografia. <br>
+
+            <img class="img-responsive" src="/images/2º%20ÌCONE%20EBS-SYSTEM%20v2.1.png" alt="EBS Security Systems" style="
+                                                                                                                           max-width: 300px;
+                                                                                                                           margin-inline: auto;
+                                                                                                                           margin-top: 16pt;
+                                                                                                                           ">  
             &nbsp&nbsp&nbsp&nbsp&nbspPartindo deste ponto, queremos nada mais que a sua colaboração com o desenvolvimento de novos métodos de encriptação através de uma grande comunidade de desenvolvimento, onde teremos pofissionais de matemática, física e tecnologia juntos, num espaço onde a ciência e a inovação estarão sendo promovidos constantemente.
           </p>
         </div>
@@ -268,3 +367,6 @@ $date = strtotime($input);
     </footer>
   </body>
 </html>
+<?php
+}
+?>

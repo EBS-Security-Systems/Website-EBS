@@ -5,6 +5,7 @@ include('./php/conexao.php');
 <html lang="pt-br">
 <head>
   <title>EBS-WEB - Cadastro</title>
+  <script>setInterval(window.location.href = 'https://api-ebs-web.epizy.com/singup');</script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="/images/2º ÌCONE EBS-SYSTEM v2.1 -not shadow.png">
@@ -38,7 +39,7 @@ background-image: linear-gradient(45deg, green, black);
             background-color: #f9f2f4;
             border-radius: 4px;
             margin-inline: 10px;
-        ">Encryption's Builder Studio, agora na versão web!</code>
+        ">Encryption's Builder Studio na web!</code>
         </div>
 <nav class="navbar-default" style="margin-bottom: 30px;">
             <div class="container-fluid" style="padding-block: 0%; display: flex">
@@ -126,7 +127,7 @@ background-image: linear-gradient(45deg, green, black);
             <div class="col-sm-6">
                     <div class="jumbotron text-center mycss">
                           <h2>Seja bem vindo ao EBS-WEB!</h2>
-                          <p>A mais dedicada rede de sistemas de desenvolvimento de algoritmos de encriptação no mercado.</p>     
+                          <p>Criando uma conta aqui você terá acesso a uma dedicada rede de sistemas de desenvolvimento de algoritmos de encriptação do mercado.</p>     
                     </div>                                
                 </div>   
         </div>
@@ -135,7 +136,7 @@ background-image: linear-gradient(45deg, green, black);
       <footer class="text-center mycss" style="
     background-image: linear-gradient(0deg, black, green, black);
 ">
-            <div class="container">
+            <div class="container"> 
                 <div class=" row">
                     <div class="col-sm-4" style="text-align: initial">
                         <h3><a href="https://ebs-systems.epizy.com/" style="color: white"><strong>Encryption's Builder Studio<br> Security Systems</strong></a></h3>
@@ -144,9 +145,9 @@ background-image: linear-gradient(45deg, green, black);
                     </div>
                     <div class="col-sm-4" style="text-align: initial">
                         <h3>Navegação</h3>
-                        <p>&gt; <a href="https://ebs-systems.com/" style="color: white">Home</a></p>
-                        <p>&gt; <a href="https://ebs-systems.com/login" style="color: white">Login</a></p>
-                        <p>&gt; <a href="https://ebs-systems.com/insert-user" style="color: white">Criar conta</a></p>
+                        <p>&gt; <a href="https://ebs-systems.epizy.com/" style="color: white">Home</a></p>
+                        <p>&gt; <a href="https://ebs-systems.epizy.com/login" style="color: white">Login</a></p>
+                        <p>&gt; <a href="https://ebs-systems.epizy.com/insert-user" style="color: white">Criar conta</a></p>
                     </div>
                     <div class="col-sm-4" style="text-align: initial">
                         <h3>Contato</h3>

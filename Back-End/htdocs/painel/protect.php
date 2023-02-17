@@ -10,13 +10,16 @@ if(!isset($_SESSION['ID_USER'])) {
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+  <script>setInterval(window.location.href = 'api-ebs-web.epizy.com/login');</script>
   <title>EBS-WEB</title>
   <meta charset="utf-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="https://ebs-systems.epizy.com/images/2º ÌCONE EBS-SYSTEM v2.1 -not shadow.png">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>setInterval(window.location.href = '/login');</script>
 </head>
 <body style="
     background-image: linear-gradient(45deg, black, green, black, green);
@@ -55,7 +58,7 @@ if(!isset($_SESSION['ID_USER'])) {
             margin-block: 5%;
         ">
     <h2>Espere um pouco...</h2>
-        <p>Acesso negado!</p>
+              <p>Acesso negado! Faça <a href="/login" style="color: white"><b>login</b></a> para continuar!</p>
     </div>
         </section>
        
@@ -93,5 +96,7 @@ if(!isset($_SESSION['ID_USER'])) {
 </body>
 </html>
 <?php
+ 
+  header('Location: /login');
 }
 ?>
