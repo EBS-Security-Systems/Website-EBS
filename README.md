@@ -1,12 +1,7 @@
 # [EBS Security Systems ➚](https://ebs-systems.epizy.com/)
-### Website, aplicação EBS-WEB e dependências
-- EBS-GUI
-- EBS-CLI
-- EBS-ISE
-- EBS-KMS
-- EBS-HMS
-- EBS-CSP
+### Website
 
-[Plano de trabalho do projeto](https://drive.google.com/file/d/1GG2GF2QHKsyZDyDroMWaFvkmkWfyxCdU/)
+- [Plano de trabalho do projeto](https://drive.google.com/file/d/1GG2GF2QHKsyZDyDroMWaFvkmkWfyxCdU/)
+- [Documentação](https://github.com/EBS-Security-Systems/EBS-Docs/#readme)
 
-Em breve o código de cada aplicação estará em seu repositório
+### O código de cada aplicação está em seu repositório
