@@ -38,9 +38,14 @@
 
     <!--Conteúdo a partir daqui...-->
 
-    <div class="jumbotron container-fluid">
-      <h2>Nossa história...</h2>
-    </div>
+    <div  style="background-color: white; color: black">
+      <h3  class="container-fluid">
+        Como tudo começou...
+      </h3>
+    </div><div class="alert alert-warning container fade in alert-dismissible">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">×</a>
+        <strong>ATENÇÃO!</strong> Aguarde o carregamento completo das imagens! Vale a pena!
+      </div>
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
