@@ -16,6 +16,14 @@
         background-color: black; 
         color: white;
       }
+      .slideanim {visibility:hidden;}
+      .slide {
+        animation-name: slide;
+        -webkit-animation-name: slide;
+        animation-duration: 1s;
+        -webkit-animation-duration: 1s;
+        visibility: visible;
+      }
     </style>
     <?php
     $file = fopen("../header.html", "r", 0);
@@ -23,9 +31,19 @@
     $header = fread($file, filesize("../header.html"));
     echo($header);
     ?>
-    <div class="container-fluid jumbotron" style="background-color: black">        
-      <div class="row">
-        <div class="col-sm-7" style="color: white;">
+    <div class="container-fluid jumbotron" style="background-color: black">  
+      <div class="container-fluid jumbotron text-center" style="
+">
+            <h3>
+              Entre em contato <a href="https://thiagosousa81.wordpress.com/#contato">aqui</a>
+            para agendar um serviço.</h3>
+          </div><div class=" slide alert alert-warning fade in alert-dismissible">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">×</a>
+        <strong>Atenção!</strong> Os valores dos nossos serviços estão em reajuste! Role a tabela para visualizar todos os serviços
+      </div>
+      
+<div class="container-fluid">
+        <div class="" style="color: white;">
           <div class="table-responsive">          
             <table class="table">
               <thead>
@@ -39,43 +57,43 @@
                 <tr>
                   <td>Programação desktop</td>
                   <td>Desenvolvimento de programas sob medida para computadores menos potentes</td>
-                  <td>~ 20 a 60 R$</td>
+                  <td>A definir...</td>
                   <td><a href="/login"><button type="button" class="btn btn-success">COMPRAR</button></a></td>
                 </tr>
                 <tr>
                   <td>Web-Site</td>
                   <td>Construção completa de web-site, com hospedagem gratuita</td>
-                  <td>~ 20 a 50 R$</td>
+                  <td>A definir...</td>
                   <td><a href="/login"><button type="button" class="btn btn-success">COMPRAR</button></a></td>
                 </tr>
                 <tr>
                   <td>Loja virtual</td>
                   <td>Construção completa de loja virtual, com hospedagem gratuita</td>
-                  <td>~ 30 a 60 R$</td>
+                  <td>A definir...</td>
                   <td><a href="/login"><button type="button" class="btn btn-success">COMPRAR</button></a></td>
                 </tr>
                 <tr>
                   <td>Web-Site Hospedado</td>
                   <td>Construção completa de web-site, com hospedagem paga</td>
-                  <td>~ 30 a 70 R$</td>
+                  <td>A definir...</td>
                   <td><a href="/login"><button type="button" class="btn btn-success">COMPRAR</button></a></td>
                 </tr>
                <tr>
                   <td>Loja virtual Hospedada</td>
                   <td>Construção completa de loja virtual, com hospedagem paga</td>
-                  <td>~ 50 a 70 R$</td>
+                  <td>A definir...</td>
                   <td><a href="/login"><button type="button" class="btn btn-success">COMPRAR</button></a></td>
                 </tr> 
                 <tr>
                   <td>Automação desktop</td>
                   <td>Automação de tarefas em computadores</td>
-                  <td>~ 0 a 5 R$</td>
+                  <td>A definir...</td>
                   <td><a href="/login"><button type="button" class="btn btn-success">COMPRAR</button></a></td>
                 </tr>
                 <tr>
                   <td>Otimização desktop</td>
                   <td>Otimização do sistema computacional completo, para melhorar a inicialização</td>
-                  <td>~ 5 a 20 R$</td>
+                  <td>A definir...</td>
                   <td><a href="/login"><button type="button" class="btn btn-success">COMPRAR</button></a></td>
                 </tr>
               </tbody>
@@ -83,14 +101,8 @@
           </div>
 
         </div>
-        <div class="col-sm-5">
-          <div class="container jumbotron text-center" style="
-    margin-block: 25%;
-">
-            <h3>
-              Para qualquer dúvida sobre os serviços clique <a href="https://thiagosousa81.wordpress.com/#contato">aqui</a> e entre em contato
-            </h3>
-          </div>
+        <div class="">
+          
         </div>        
       </div>
     </div>
