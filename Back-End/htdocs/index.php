@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br"><head>
   <title>EBS Security Systems</title>
-  <meta charset="utf-8">
+  <meta charset="utf-8"> 
   <meta name="google-site-verification" content="3xdx50DorW0BgAza_PUsK2xVgQGUZegVIt7wxWjDDF0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="/images/2º ÌCONE EBS-SYSTEM v2.1 -not shadow.png">
@@ -23,29 +23,28 @@
 
     $header = fread($file, filesize("header.html"));
     echo($header);
-    ?>
-
-    
-    <!--<iframe src="https://ebs-systems.epizy.com/navbar.html" width="100%" style="
-                                                                                border: 0px;
-                                                                                display: inline;
-                                                                                margin: 0px;
-                                                                                height: 75px;">
-    </iframe>-->
-
-
+    ?>        	
 
 
     <!--Conteúdo a partir daqui...-->
 
     <div  style="background-color: white; color: black">
       <h3  class="container-fluid">
-        Como tudo começou...
+        Como tudo começou... <a href="/slide.php">Ver slide</a>
       </h3>
     </div><div class="alert alert-warning container fade in alert-dismissible">
         <a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">×</a>
         <strong>ATENÇÃO!</strong> Aguarde o carregamento completo das imagens! Vale a pena!
-      </div>
+    </div>
+<!--
+    <object type="text/html" data="/slide.html" style="width: 100%; height: 400px">      
+    </object>
+    <iframe src="https://ebs-systems.epizy.com/slide.html" width="100%" height="500px" style="
+                                                                                              border: 0px;
+                                                                                              display: inline;
+                                                                                margin: 0px;
+                                                                                /*height: 850px;*/">
+    </iframe>-->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
@@ -188,7 +187,7 @@
         </div>
       </div>
     </div>
-    <div class="jumbotron text-center mycss" style="margin-block: 0px;">
+    <div id="applications" class="jumbotron text-center mycss slide" style="margin-block: 0px;">
       <p style="
                 text-align: center;
                 ">Tenha acesso ilimitado a nossas aplicações pelo...</p>
@@ -207,10 +206,10 @@
                    border-radius: 4px;
                    ">Encryption's Builder Studio na web!</code><div style="
     margin-top: 5px;
-"><a href="https://api-ebs-web.epizy.com/login"><button type="button" class="btn btn-default"><strong>LOGIN</strong></button></a> <a href="https://api-ebs-web.epizy.com/singup"><button type="button" class="btn btn-default"><strong>CADASTRE-SE</strong></button></a></div>
+"><a href="https://api-ebs-web.epizy.com/login"><button type="button" class="btn btn-default"><strong>LOGIN</strong></button></a> <a href="https://api-ebs-web.epizy.com/singup"><button type="button" class="btn btn-default"><strong>CADASTRE-SE</strong></button></a> <a href="https://idc.ebs-systems.epizy.com/"><button type="button" class="btn btn-default"><strong>COMUNIDADE</strong></button></a></div>
 
     </div>
-<div id="applications" class="container-fluid text-center jumbotron">
+<div class="container-fluid text-center jumbotron">
       <h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">O QUE PLANEJAMOS PARA ESTE ANO ?</font></font></h2>
       <h4>Estamos criando algumas aplicações...</h4>
 
@@ -218,17 +217,17 @@
       <div class="row slideanim slide">
         <div class="col-sm-4">
           <img src="/images/Cadeado.png" alt="" style="width: 20%">
-          <h4><a href="https://github.com/EBS-Security-Systems/EBS-Docs/blob/main/docs/EBS-GUI.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">EBS-GUI</font></font></a></h4>
+          <h4><a href="https://github.com/EBS-Security-Systems/EBS-Docs/blob/main/docs/EBS-GUI.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">EBS-GUI <span class="glyphicon glyphicon-new-window"></span></font></font></a></h4>
           <p><font style="vertical-align: inherit; color: black"><font style="vertical-align: inherit;">O nosso Estúdio Construtor de Encriptação, integrado com uma comunidade que constrói a todo tempo novos algoritmos de encriptação.</font></font></p>
         </div>
         <div class="col-sm-4">
           <img src="/images/Cadeado.png" alt="" style="width: 20%">
-          <h4><a href="https://github.com/EBS-Security-Systems/EBS-Docs/blob/main/docs/EBS-CLI.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">EBS-CLI</font></font></a></h4>
+          <h4><a href="https://cli.ebs-systems.epizy.com/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">EBS-CLI <span class="glyphicon glyphicon-new-window"></span></font></font></a></h4>
           <p><font style="vertical-align: inherit; color: black"><font style="vertical-align: inherit;">Um ambiente de linha de comando para gerenciar processos de criptografia.</font></font></p>
         </div>
         <div class="col-sm-4">
           <img src="/images/Cadeado.png" alt="" style="width: 20%">
-          <h4><a href="https://github.com/EBS-Security-Systems/EBS-Docs/blob/main/docs/EBS-CSP.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">EBS-CSP</font></font></a></h4>
+          <h4><a href="https://github.com/EBS-Security-Systems/EBS-Docs/blob/main/docs/EBS-CSP.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">EBS-CSP <span class="glyphicon glyphicon-new-window"></span></font></font></a></h4>
           <p><font style="vertical-align: inherit; color: black"><font style="vertical-align: inherit;">O melhor Framework de provimento de serviços de encriptação para linguagens de programação.</font></font></p>
         </div>
       </div>
@@ -236,17 +235,17 @@
       <div class="row slideanim slide">
         <div class="col-sm-4">
           <img src="/images/Cadeado.png" alt="" style="width: 20%">
-          <h4><a href="https://github.com/EBS-Security-Systems/EBS-Docs/blob/main/docs/EBS-KMS.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">EBS-KMS</font></font></a></h4>
+          <h4><a href="https://github.com/EBS-Security-Systems/EBS-Docs/blob/main/docs/EBS-KMS.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">EBS-KMS <span class="glyphicon glyphicon-new-window"></span></font></font></a></h4>
           <p><font style="vertical-align: inherit; color: black"><font style="vertical-align: inherit;">Mantém o gerenciamento das suas senhas 100% seguro.</font></font></p>
         </div>
         <div class="col-sm-4">
           <img src="/images/Cadeado.png" alt="" style="width: 20%">
-          <h4><a href="https://github.com/EBS-Security-Systems/EBS-Docs/blob/main/docs/EBS-ISE.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">EBS-ISE</font></font></a></h4>
+          <h4><a href="https://github.com/EBS-Security-Systems/EBS-Docs/blob/main/docs/EBS-ISE.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">EBS-ISE <span class="glyphicon glyphicon-new-window"></span></font></font></a></h4>
           <p><font style="vertical-align: inherit; color: black"><font style="vertical-align: inherit;">Ambiente de script integrado para fazer sua própria encriptação.</font></font></p>
         </div>
         <div class="col-sm-4">
           <img src="/images/Cadeado.png" alt="" style="width: 20%">
-          <h4 style="color:#303030;"><a href="https://github.com/EBS-Security-Systems/EBS-Docs/blob/main/docs/EBS-HMS.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">EBS-HMS</font></font></a></h4>
+          <h4 style="color:#303030;"><a href="https://github.com/EBS-Security-Systems/EBS-Docs/blob/main/docs/EBS-HMS.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">EBS-HMS <span class="glyphicon glyphicon-new-window"></span></font></font></a></h4>
           <p><font style="vertical-align: inherit; color: black"><font style="vertical-align: inherit;">Um serviço de mensagens ocultas ideal para compartinhar segredos.</font></font></p>
         </div>
       </div>
