@@ -27,16 +27,33 @@
 
 
     <!--Conteúdo a partir daqui...-->
+    <div class="container-fluid slide" style="
+                                              background-color: black;
+                                              padding-inline: 6px;
+                                              ">  
+      <div class="col-sm-6" style="max-width: 100%;overflow: auto;">
+        <h1 style="color: white;margin-block: 15%;">A mais de 3 anos criando <b>Sistemas de Informação</b> com <b>Alto Desempenho</b> e <b>Segurança Máxima</b>!</h1>
+      </div>
+      <div class="col-sm-6" style="
+                           max-width: 100%;
+                           ">
+        <a href="https://github.com/EBS-Security-Systems/#readme" target="_blank"><img src="https://github-readme-streak-stats.herokuapp.com/?user=thiagosousa81&amp;show_icons=true&amp;locale=pt-br&amp;theme=chartreuse-dark&amp;layout=compact&amp;PAT_1=thiagosousa81" alt="Status de contribuíção" style="
+    width: 90%;
+    margin-inline-start: 5%;
+    margin-block: 10%;
+          "></a>
+          </div>
+    </div>
 
     <div  style="background-color: white; color: black">
       <h3  class="container-fluid">
         Como tudo começou... <a href="/slide.php">Ver slide</a>
       </h3>
     </div><div class="alert alert-warning container fade in alert-dismissible">
-        <a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">×</a>
-        <strong>ATENÇÃO!</strong> Aguarde o carregamento completo das imagens! Vale a pena!
+    <a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">×</a>
+    <strong>ATENÇÃO!</strong> Aguarde o carregamento completo das imagens! Vale a pena!
     </div>
-<!--
+    <!--
     <object type="text/html" data="/slide.html" style="width: 100%; height: 400px">      
     </object>
     <iframe src="https://ebs-systems.epizy.com/slide.html" width="100%" height="500px" style="
@@ -45,19 +62,20 @@
                                                                                 margin: 0px;
                                                                                 /*height: 850px;*/">
     </iframe>-->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div id="myCarousel" class="carousel slide container" data-ride="carousel" style="width: 75%;">
       <!-- Indicators -->
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1" class=""></li>
         <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+<li data-target="#myCarousel" data-slide-to="3" class=""></li>
       </ol>
 
       <!-- Wrapper for slides -->
       <div class="carousel-inner">
 
         <div class="item active">
-          <img src="/images/EBS-Windows 11.jpg" alt="" style="width:100%;">
+          <img src="/images/EBS-Windows 11.png" alt="" style="width:100%;">
           <div class="carousel-caption" style="background-color: black;">
             <h5>Tudo começou com um aplicativo...</h5>
 
@@ -73,10 +91,17 @@
         </div>
 
         <div class="item">
-          <img src="/images/Premiação FECIBA - Principal .jpg" alt="New York" style="width:100%;">
+          <img src="/images/Premiação FECIBA - Principal .png" alt="Foto Premiação" style="width:100%;">
           <div class="carousel-caption" style="background-color: black;">
 
             <h5>E ganhamos o 1º lugar na 10º FECIBA</h5>
+          </div>
+        </div>
+        <div class="item">
+          <img src="/images/4imgslide.png" alt="EBS no Git-Hub" style="width:100%;">
+          <div class="carousel-caption" style="background-color: black;">
+
+            <h5>Assim iniciou-se uma <i>startup</i> focada no desenvolvimento de Software Seguro</h5>
           </div>
         </div>
 
@@ -101,13 +126,13 @@
                                                               ">
       <h2 style="
                  color: white;
-                 ">Mas não paramos por aí...</h2>
+                 ">Não paramos por aí...</h2>
       <h4 style="
                  color: white;
                  ">Todo respaldo acadêmico pode ser rentável. </h4>
       <div class="row">
         <div class="col-sm-7">
-          <h4 style="text-align: justify;color: white;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><br>A partir dos pequenos estudos de caso, nasceu a <a href="#" style="color: white">"<strong>EBS Security Systems</strong>"</a>.<br><br>Começamos como uma pequena <i>startup</i> que vai ingressar no mercado de desenvolvimento de softwares em geral.<br><br>Juntamente com isso, focamos em desenvolver ambientes onde pessoas podem criar novos algoritmos de encriptação simplesmente trocando experiências.<br><br>Isso é só pra início de conversa, porque o que importa é o que vem aí...</font></font></h4>
+          <h4 style="text-align: justify;color: white;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><br>A partir dos pequenos estudos de caso, nasceu a <a href="#" style="color: white">"<strong>EBS Security Systems</strong>"</a>.<br><br>Começamos como uma pequena <i>startup</i> que está ingressando no mercado de desenvolvimento de softwares em geral.<br><br>Juntamente com isso, focamos em desenvolver ambientes onde pessoas podem criar novos algoritmos de encriptação simplesmente trocando experiências.<br><br>Isso é só pra início de conversa, porque o que importa é o que vem aí...</font></font></h4>
           
 
 
@@ -123,7 +148,7 @@
 
           </div>
         </div>
-        <div class="">
+       <!-- <div class="">
           <table class="table" style="
                                       color: white;
                                       ">
@@ -152,7 +177,7 @@
                      color: white;
                      text-align: initial;
                      ">Para mais informações sobre os serviços disponíveis <a href="/services" style="color: white;">clique aqui</a></h5> 
-        </div></div>
+        </div>--></div>
     </div>
     <div id="mvv" class="jumbotron text-center" style="margin-block: 0px;">
       <div class="row" style="max-width: 100%; padding-inline-start: 30px">
@@ -162,7 +187,7 @@
           </h2>
           <span class="glyphicon glyphicon-globe logo slide" style="color: white; font-size: 72pt"></span>
           <p style="color: white; padding-inline: 15px;">
-           <a href="#" style="color: white"><strong>Nós</strong></a> queremos tornar o ambiente virtual mais seguro contribuíndo com a troca de experiências. 
+           <a href="#" style="color: white"><strong>A EBS Security Systems</strong></a> tem como missão oferecer soluções inovadoras e eficazes para proteger a privacidade e segurança dos usuários na internet, garantindo um ambiente virtual mais seguro e confiável.
           </p>
         </div>
         <div class="col-sm-4" style="
@@ -173,7 +198,7 @@
           </h2>
           <span class="glyphicon glyphicon-eye-open logo slide" style="color: black; font-size: 72pt"></span>
           <p style="color: #303030; padding-inline: 15px;">
-            Só é possível melhorar a segurança cibernética na web através da troca de conhecimento.
+            Acreditamos que todos têm direito a um ambiente virtual seguro e livre de ameaças. Queremos ser referência em <a href="https://github.com/EBS-Security-Systems/" style="color: black"><b>segurança cibernética</b>,</a> trabalhando em conjunto com nossos colaboradores para alcançar esse objetivo.
           </p>
         </div>
         <div class="col-sm-4" style="background-color: black;padding-block: 20px;">
@@ -182,7 +207,7 @@
           </h2>
           <span class="glyphicon glyphicon-signal logo slide" style="color: white; font-size: 72pt"></span>
           <p style="color: white; padding-inline: 15px;">
-            Somos altruistas, disponibilizando dos <a href="/services" style="color: white"><strong>melhores serviços</strong></a> com toda a qualidade que você merece.
+            Somos uma empresa comprometida com a transparência, ética, responsabilidade social e inovação. <a href="/services" style="color: white"><strong>Nossos serviços</strong></a> são baseados na qualidade, confiabilidade e excelência no atendimento ao cliente. 
           </p>
         </div>
       </div>
