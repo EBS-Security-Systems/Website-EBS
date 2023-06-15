@@ -42,7 +42,7 @@
         <strong>Atenção!</strong> Os valores dos nossos serviços estão em reajuste! Role a tabela para visualizar todos os serviços
       </div>
       
-<div class="container-fluid">
+<div class="container-fluid slide">
         <div class="" style="color: white;">
           <div class="table-responsive">          
             <table class="table">
@@ -55,38 +55,44 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>Programação desktop</td>
-                  <td>Desenvolvimento de programas sob medida para computadores menos potentes</td>
+                  <td>Automação comercial</td>
+                  <td>Desenvolvimento de automações comerciais sob medida</td>
                   <td>A definir...</td>
                   <td><a href="/login"><button type="button" class="btn btn-success">COMPRAR</button></a></td>
                 </tr>
                 <tr>
-                  <td>Web-Site</td>
-                  <td>Construção completa de web-site, com hospedagem gratuita</td>
+                  <td>Web-Site Corporativo</td>
+                  <td>Construção completa de web-site, com hospedagem gratuita ou paga</td>
                   <td>A definir...</td>
                   <td><a href="/login"><button type="button" class="btn btn-success">COMPRAR</button></a></td>
                 </tr>
                 <tr>
                   <td>Loja virtual</td>
-                  <td>Construção completa de loja virtual, com hospedagem gratuita</td>
+                  <td>Construção completa de loja virtual, com hospedagem gratuita ou paga</td>
                   <td>A definir...</td>
                   <td><a href="/login"><button type="button" class="btn btn-success">COMPRAR</button></a></td>
                 </tr>
                 <tr>
-                  <td>Web-Site Hospedado</td>
-                  <td>Construção completa de web-site, com hospedagem paga</td>
+                  <td>Sistema de Informação Gerencial</td>
+                  <td>Desenvolvimento de SIG para cadastros de diversos tipos, com níveis de acesso para usuários</td>
                   <td>A definir...</td>
                   <td><a href="/login"><button type="button" class="btn btn-success">COMPRAR</button></a></td>
                 </tr>
                <tr>
-                  <td>Loja virtual Hospedada</td>
-                  <td>Construção completa de loja virtual, com hospedagem paga</td>
+                  <td>Controle de Caixa</td>
+                  <td>Software de controle de caixa sob medida</td>
                   <td>A definir...</td>
                   <td><a href="/login"><button type="button" class="btn btn-success">COMPRAR</button></a></td>
                 </tr> 
                 <tr>
-                  <td>Automação desktop</td>
-                  <td>Automação de tarefas em computadores</td>
+                  <td>Sistema de Controle de Estoque</td>
+                  <td>Software para controle do estoque, elaborado sob medida</td>
+                  <td>A definir...</td>
+                  <td><a href="/login"><button type="button" class="btn btn-success">COMPRAR</button></a></td>
+                </tr>
+                <tr>
+                  <td>Sistema de Agendamento</td>
+                  <td>Software para clientes realizarem vários tipos de agendamento</td>
                   <td>A definir...</td>
                   <td><a href="/login"><button type="button" class="btn btn-success">COMPRAR</button></a></td>
                 </tr>
@@ -109,7 +115,7 @@
     
     <section class="row" style="max-width: 100%;text-align: center;margin-inline: 0px;">
       <div class="col-sm-6" style="text-align: center;">
-        <img src="https://gifs.eco.br/wp-content/uploads/2022/08/gifs-de-construcao-civil-14.gif" class="img-fluid" alt="Imagem responsiva" style="max-width: 90%; margin-block-end: 10px;margin-inline: 4%;">
+        <img src="https://gifs.eco.br/wp-content/uploads/2022/08/gifs-de-construcao-civil-14.gif" class="img-fluid" alt="Imagem responsiva" style="max-width: 90%; margin-block-end: 10px;margin-inline: 4%; border-radius: 10px;">
       </div>
 
 
