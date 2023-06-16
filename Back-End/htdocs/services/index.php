@@ -6,12 +6,7 @@
   <link rel="shortcut icon" href="/images/2º ÌCONE EBS-SYSTEM v2.1 -not shadow.png">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script></head>
-
-  <body style="
-               background-image: linear-gradient(45deg, green, black);
-               ">
-    <style>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script><style>
       .mycss{
         background-color: black; 
         color: white;
@@ -24,7 +19,12 @@
         -webkit-animation-duration: 1s;
         visibility: visible;
       }
-    </style>
+    </style></head>
+
+  <body style="
+               background-image: linear-gradient(45deg, green, black);
+               ">
+    
     <?php
     $file = fopen("../header.html", "r", 0);
 
@@ -34,9 +34,9 @@
     <div class="container-fluid jumbotron" style="background-color: black">  
       <div class="container-fluid jumbotron text-center" style="
 ">
-            <h3>
+            <h4>
               Entre em contato <a href="https://thiagosousa81.wordpress.com/#contato">aqui</a>
-            para agendar um serviço.</h3>
+              para agendar um serviço, ou acesse a <a href="https://api-ebs-web.epizy.com/#services">Área do Cliente >>> Menu >>> Serviços</a></h4>
           </div><div class=" slide alert alert-warning fade in alert-dismissible">
         <a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">×</a>
         <strong>Atenção!</strong> Os valores dos nossos serviços estão em reajuste! Role a tabela para visualizar todos os serviços
