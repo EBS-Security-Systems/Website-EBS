@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Exemplo React</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>  
+  <body>
+    <div id="componente1"></div>
+    <div id="componente2"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/react@17.0.2/umd/react.development.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/react-dom@17.0.2/umd/react-dom.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+
+    <script type="text/babel">
+      // Define o primeiro componente
+      function Componente1() {
+        return (
+          <div>
+            <h1>Componente 1</h1>
+            <p>Este é o primeiro componente.</p>
+          </div>
+        );
+      }
+
+      // Define o segundo componente
+      function Componente2() {
+        return (
+          <div>
+            <h1>Componente 2</h1>
+            <p>Este é o segundo componente.</p>
+          </div>
+        );
+      }
+
+      // Renderiza o primeiro componente no elemento com id "componente1"
+      ReactDOM.render(
+        <Componente1 />,
+        document.getElementById('componente1')
+      );
+
+      // Renderiza o segundo componente no elemento com id "componente2"
+      ReactDOM.render(
+        <Componente2 />,
+        document.getElementById('componente2')
+      );
+    </script>
+  </body>
+</html>
