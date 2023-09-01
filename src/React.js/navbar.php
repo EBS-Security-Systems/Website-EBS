@@ -1,5 +1,5 @@
-
-      function NavBar() {
+<?php
+      echo 'function NavBar() {
         return (
           <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <div className="container">
@@ -21,7 +21,7 @@
                     <a className="nav-link" href="/applications">Aplicações</a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="/services">Serviços</a>
+                    <a className="nav-link" href="/services.html">Serviços</a>
                   </li>
                   <li className="nav-item">
                     <a className="nav-link" href="https://github.com/EBS-Security-Systems/Training" target="_blank" rel="noopener noreferrer">Treinamentos</a>
@@ -43,4 +43,4 @@
             </div>
           </nav>
         );
-      }
+      }';?>
