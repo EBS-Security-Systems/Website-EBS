@@ -27,6 +27,28 @@
     </style>
   </head>
   <body>
+      <script>
+    function aceitarCookies() {
+        document.cookie = "cookies_aceitos=true; expires=Thu, 01 Jan 2099 00:00:00 UTC;";
+        document.getElementById("mensagem-cookies").style.display = "none";
+    }
+
+    if (document.cookie.indexOf("cookies_aceitos") === false) {
+        var mensagem = document.createElement("div");
+        mensagem.innerHTML =
+            "Nosso site utiliza cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa <a href='/privacity/'>Política de Privacidade</a>.<button class="btn btn-default" onclick='aceitarCookies();'>Aceitar</button>";
+        mensagem.id = "mensagem-cookies";
+        mensagem.style.position = "fixed";
+        mensagem.style.top = "0";
+        mensagem.style.left = "0";
+        mensagem.style.right = "0";
+        mensagem.style.backgroundColor = "#F5F5F5";
+        mensagem.style.padding = "10px";
+        mensagem.style.borderTop = "1px solid #CCC";
+        mensagem.style.textAlign = "center";
+        document.body.appendChild(mensagem);
+    }
+    </script>
     <!--A aplicação será mostrada aqui-->
     <header id="header"></header>
     <section id="navbar"></section>
@@ -35,7 +57,7 @@
     <section class="message1">
       <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=900&size=25&pause=300&color=11C52D&background=000000E4&center=true&vCenter=true&width=800&height=100&lines=C%3A%5C%3E+Automatizamos+sua+empresa_;C%3A%5C%3E+Desenvolvemos+sites_;C%3A%5C%3E+Desenvolvemos+sistemas_;C%3A%5C%3E+Tudo+de+acordo+com+o+que+vc+precisa_" alt="Mensagens SVG" class="messageimg" style="margin-block-end: 5px;border-radius: 15px;">
       
-      <a href="https://api-ebs-web.epizy.com" target="_blank">
+      <a href="https://wa.me/557588583604?text=Olá, Thiago! Visitei seu site na web." target="_blank">
         <button class="btn btn-success btn-lg" style="
                                                       font-size: 16pt;
                                                       font-weight: bold;
