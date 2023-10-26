@@ -1,45 +1,61 @@
+body {
+  background-color: black;
+}
+
 .mycss{
-  background-color: black; 
-  color: white;   
+background-color: black; 
+color: white;   
 }
 
 .links {
-  text-decoration: none;
+text-decoration: none;
 }
 
 
 /*Estilos da mensagem 1*/
 .message1 {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  align-items: center;
+display: flex;
+justify-content: flex-start;
+flex-direction: column;
+align-items: center;
 
 }
 .message1::before {
-  content: "";
-  /*background-image: url(/src/Gif%20programe.webp);*/
-  /*background-image: url(https://i.pinimg.com/originals/18/e0/64/18e0641748101b3f7275f5723d4405f0.gif);*/
-  background-image: url(https://i.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 150%;
-  position: absolute;
-  z-index: -1;
-  opacity: 0.8;
+content: "";
+/*background-image: url(/src/Gif%20programe.webp);*/
+/*background-image: url(https://i.pinimg.com/originals/18/e0/64/18e0641748101b3f7275f5723d4405f0.gif);*/
+background-image: url(https://i.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.webp);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+width: 100%;
+height: 150%;
+position: absolute;
+z-index: -1;
+backdrop-filter: blur(10px); /* Ajuste o valor do blur conforme desejado */
+opacity: 0.3; /* Ajuste a opacidade conforme desejado */
 }
 .messageimg {
-  margin-block: 10%;
-  width: 60%;
+margin-block: 10%;
+width: 60%;
+margin-block-end: 5px;
+border-radius: 15px;
+}
+
+.btn-top {
+font-size: 16pt;
+font-weight: bold;
+/* width: 203%; */
+background-image: linear-gradient(180deg, green, black, green);
+margin-block-end: 20%;
+white-space: pre-wrap;
 }
 
 @media (max-width: 1120px){
-  .messageimg {
-    margin-block: 10%;
-    width: 90%;
-  }
+.messageimg {
+  margin-block: 10%;
+  width: 90%;
+}
 
 }
 
@@ -47,59 +63,59 @@
 
 /* Estilos para o rodapé escuro */
 .dark-footer {
-  background-image: linear-gradient(black, green, black);
-  color: white;
-  padding: 20px;
+background-image: linear-gradient(black, green, black);
+color: white;
+padding: 20px;
 }
 
 /* Estilos para o título do rodapé */
 .footer-heading {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 10px;
+font-size: 20px;
+font-weight: bold;
+margin-bottom: 10px;
 }
 
 /* Estilos para a descrição do rodapé */
 .footer-description {
-  font-size: 14px;
-  margin-bottom: 20px;
+font-size: 14px;
+margin-bottom: 20px;
 }
 
 /* Estilos para as redes sociais no rodapé */
 .social-media a {
-  color: white;
-  margin-right: 10px;
-  font-size: 18px;
+color: white;
+margin-right: 10px;
+font-size: 18px;
 }
 
 /* Estilos para os links do rodapé */
 .footer-links li {
-  list-style: none;
-  margin-bottom: 10px;
+list-style: none;
+margin-bottom: 10px;
 }
 
 .footer-links a {
-  color: white;
-  text-decoration: none;
+color: white;
+text-decoration: none;
 }
 
 .footer-links a:hover {
-  text-decoration: underline;
+text-decoration: underline;
 }
 
 /* Estilos para as informações de contato no rodapé */
 .footer-contact li {
-  list-style: none;
-  margin-bottom: 10px;
+list-style: none;
+margin-bottom: 10px;
 }
 
 .footer-contact a {
-  color: white;
-  text-decoration: none;
+color: white;
+text-decoration: none;
 }
 
 /* Estilos para o texto do rodapé */
 .footer-text {
-  font-size: 12px;
-  margin-top: 10px;
+font-size: 12px;
+margin-top: 10px;
 }
