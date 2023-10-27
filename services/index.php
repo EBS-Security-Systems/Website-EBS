@@ -53,9 +53,9 @@
                    ">Encryption's Builder Studio na web!</code>
         <div style="
     margin-top: 5px;
-"><a href="https://api-ebs-web.epizy.com/login"><button type="button"
+"><a href="https://web.ebs-systems.epizy.com/login"><button type="button"
                     class="btn btn-secondary"><strong>LOGIN</strong></button></a> <a
-                href="https://api-ebs-web.epizy.com/singup"><button type="button"
+                href="https://web.ebs-systems.epizy.com/singup"><button type="button"
                     class="btn btn-secondary"><strong>CADASTRE-SE</strong></button></a> <a
                 href="https://idc.ebs-systems.epizy.com/"><button type="button"
                     class="btn btn-secondary"><strong>COMUNIDADE</strong></button></a></div>
