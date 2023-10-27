@@ -9,7 +9,7 @@
     
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <link href="/css/styl.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -53,9 +53,9 @@
                    ">Encryption's Builder Studio na web!</code>
         <div style="
     margin-top: 5px;
-"><a href="https://api-ebs-web.epizy.com/login"><button type="button"
+"><a href="https://web.ebs-systems.epizy.com/login"><button type="button"
                     class="btn btn-secondary"><strong>LOGIN</strong></button></a> <a
-                href="https://api-ebs-web.epizy.com/singup"><button type="button"
+                href="https://web.ebs-systems.epizy.com/singup"><button type="button"
                     class="btn btn-secondary"><strong>CADASTRE-SE</strong></button></a> <a
                 href="https://idc.ebs-systems.epizy.com/"><button type="button"
                     class="btn btn-secondary"><strong>COMUNIDADE</strong></button></a></div>
@@ -63,92 +63,121 @@
     
     </section>
     
-    
     <section id="tercery-message" class="container-fluid" style="background-color: black; padding: 2%">
-        <h1 class="text-center text-light">Como podemos impulsionar o seu negócio?</h1>
+        <h1 class="text-center text-light">Nossas aplicações</h1>
         <div class="container-fluid row">
             <!-- Bloco 1 -->
             <div class="col-sm-4 bg-white">
-                <h2>Website Corporativo</h2>
+                <h2>EBS-GUI</h2>
                 <p class="text-justify">
-                    Apresente o seu negócio aos clientes com um website institucional, fornecendo informações de contato e páginas de conversão.
+                    Uma ferramenta para aprender criptografia de forma intuitiva e dinâmica. Criptografe textos e arquivos mesclando múltiplos criptográficos.
                 </p>
-                <a href="#first-message" class="btn btn-dark">Saiba mais</a>
+                <a href="https://thiagosousa81.wordpress.com/ebs/" class="btn btn-dark">Saiba mais</a>
             </div>
 
             <!-- Bloco 2 -->
             <div class="col-sm-4 bg-white">
-                <h2>Agenda Online</h2>
+                <h2>EBS-CLI</h2>
                 <p class="text-justify">
-                    Gerencie os horários de forma eficiente com um sistema de agendamento automatizado, perfeito para barbearias, salões de beleza e lava-jatos.
+                    Use o poder da linha de comando para encriptar arquivos. Ideal para proteger diretórios utilizando a criptografia simétrica.
                 </p>
-                <a href="#first-message" class="btn btn-dark">Saiba mais</a>
+                <a href="https://cli.ebs-systems.epizy.com/" class="btn btn-dark">Saiba mais</a>
             </div>
 
             <!-- Bloco 3 -->
             <div class="col-sm-4 bg-white">
-                <h2>Loja Virtual</h2>
+                <h2>EBS-CSP</h2>
                 <p class="text-justify">
-                    Venda seus produtos online com uma loja integrada a cadastros de clientes e produtos flexíveis.
+                    Tenha em mãos uma API para prover o melhor e mais dedicado serviço de criptografia. Perfeito para desenvolvedores que buscam proteger seus sistemas.
                 </p>
-                <a href="#first-message" class="btn btn-dark">Saiba mais</a>
+                <a href="https://csp.ebs-systems.epizy.com/" class="btn btn-dark">Saiba mais</a>
             </div>
 
             <!-- Bloco 4 -->
             <div class="col-sm-4 bg-white">
-                <h2>Sistemas de Gestão</h2>
+                <h2>EBS-ISE</h2>
                 <p class="text-justify">
-                    Tenha um sistema de informação gerencial eficaz para cadastrar clientes, produtos, serviços e compras.
+                    Trabalhe com a linha de comando de forma mais completa, automatizando a cifragem através de scripts desenvolvidos por você mesmo.
                 </p>
                 <a href="#first-message" class="btn btn-dark">Saiba mais</a>
             </div>
 
             <!-- Bloco 5 -->
             <div class="col-sm-4 bg-white">
-                <h2>Integração entre Aplicações</h2>
+                <h2>EBS-IDC</h2>
                 <p class="text-justify">
-                    Acesse seus dados de aplicativos em dispositivos móveis com integração entre todos os nossos sistemas.
+                    Troque ideias sobre a área de Segurança da Informação com pessoas realmente interessadas. Aprenda e compartilhe conteúdo com os demais usuários das aplicações EBS
                 </p>
                 <a href="#first-message" class="btn btn-dark">Saiba mais</a>
             </div>
 
             <!-- Bloco 6 -->
             <div class="col-sm-4 bg-white">
-                <h2>Aplicações de Mídias Sociais</h2>
+                <h2>EBS-KMS</h2>
                 <p class="text-justify">
-                    Crie redes sociais personalizadas, fóruns e comunidades online com recursos de interação social e segurança de assinatura digital.
+                    Armazene suas senhas da forma mais segura possível. A proteção é feita por ótimos métodos de cifragem quase indestrutíveis e só quem pode vê-la é você.
                 </p>
                 <a href="#first-message" class="btn btn-dark">Saiba mais</a>
             </div>
-
+            
             <!-- Bloco 7 -->
             <div class="col-sm-4 bg-white">
-                <h2>Automações com Arduino</h2>
+                <h2>EBS-DSI</h2>
                 <p class="text-justify">
-                    Desenvolvemos produtos integrados a banco de dados online e equipamentos específicos para suas necessidades.
+                    Tenha em suas mãos a possibilidade de assinar digitalmente publicações e posts em redes sociais. Ótimo para a autenticação de informações.
                 </p>
                 <a href="#first-message" class="btn btn-dark">Saiba mais</a>
             </div>
-
-            <!-- Bloco 8 -->
+            
+             <!-- Bloco 8 -->
             <div class="col-sm-4 bg-white">
-                <h2>Automações para Web</h2>
+                <h2>EBS-HMS</h2>
                 <p class="text-justify">
-                    Automatize processos web, como transferência de dados do Excel para sistemas web e muito mais.
+                    Envie mensagens por uma plataforma totalmente oculta que utiliza a criptografia de ponta-a-ponta. Suas mensagens só podem ser lidas pelo destinatário.
                 </p>
                 <a href="#first-message" class="btn btn-dark">Saiba mais</a>
             </div>
-
+            
             <!-- Bloco 9 -->
             <div class="col-sm-4 bg-white">
-                <h2>Desenvolvimento e Integração com APIs</h2>
+                <h2>EBS-AMS</h2>
                 <p class="text-justify">
-                    Tenha sua própria API na web e integre nossos sistemas com outras APIs, garantindo a confidencialidade dos dados.
+                    Proteja sua rede corporativa de ataques com essa maravilhosa ferramenta. Ela é capaz de imobilizar hosts maliciosos na web e facilitar o trabalho de forense de T.I.
                 </p>
-                <a href="#first-message" class="btn btn-dark">Saiba mais</a>
+                <a href="https://ams.ebs-systems.epizy.com/" class="btn btn-dark">Saiba mais</a>
             </div>
         </div>
     </section>
+    
+    <style>
+    .cta-section {
+      background-color: green; /* Cor da seção CTA */
+      color: white;
+      text-align: center;
+      padding: 60px 0;
+    }
+
+    .cta-heading {
+      font-size: 1.7rem;
+      margin-bottom: 20px;
+    }
+
+    .cta-button {
+      font-size: 1.3rem;
+      margin-inline: 2px;
+    }
+  </style>
+    
+    <section class="cta-section">
+    <div class="container">
+      <h3 class="cta-heading">Nossa startup desenvolve constantemente novas tecnologias de software para a área de Segurança da Informação!</h3>
+      <!--<p class="lead">Caso queira contribuir com alguma delas entre em contato.</p>-->
+      <a href="https://wa.me/557588583604?text=Olá Thiago! Vi as aplicações desenvolvidas por vcs e gostaria de participar melhorando essas ferramentas." class="btn btn-light btn-lg cta-button">
+          <i class="bi bi-code"></i>
+ CONTRIBUIR COMO DESENVOLVEDOR</a>
+      <a href="https://wa.me/557588583604?text=Olá Thiago! Gostei tanto de suas aplicações que gostaria de fazer uma doação para o projeto." class="btn btn-light btn-lg cta-button"><i class="bi bi-currency-dollar"></i> CONTRIBUIR COM PIX</a>
+    </div>
+  </section>
      
      <footer id="footer" class="dark-footer">
       <div class="container">
@@ -163,8 +192,8 @@
             <h3 class="footer-heading">Navegação</h3>
             <ul class="footer-links">
               <li><a href="https://ebs-systems.epizy.com/">Home</a></li>
-              <li><a href="https://api-ebs-web.epizy.com/login/">Login</a></li>
-              <li><a href="https://api-ebs-web.epizy.com/singup/">Criar conta</a></li>
+              <li><a href="https://web.ebs-systems.epizy.com/login/">Login</a></li>
+              <li><a href="https://web.ebs-systems.epizy.com/singup/">Criar conta</a></li>
             </ul>
           </div>
           <div class="col-sm-4">
