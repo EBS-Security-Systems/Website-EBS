@@ -29,7 +29,7 @@
     if (document.cookie.indexOf("cookies_aceitos") === false) {
       var mensagem = document.createElement("div");
       mensagem.innerHTML =
-        "Nosso site utiliza cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa <a href='/privacity/'>Política de Privacidade</a>.<button class='btn btn-default' onclick='aceitarCookies();'>Aceitar</button>";
+        "Nosso site utiliza cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa <a href='/privacity/'>Política de Privacidade</a>.<button class="btn btn -default " onclick='aceitarCookies();'>Aceitar</button>";
       mensagem.id = "mensagem-cookies";
       mensagem.style.position = "fixed";
       mensagem.style.top = "0";
@@ -85,27 +85,14 @@
     </nav>
   </section>
 
-  <!-- <section class="container-fluid">
-    <div class="row bg-white">
-      <div class="col-sm-6 d-md-block jumbotron">
-        <h1>Digitalizamos sua empresa</h1>
-        <h3>Somos focados em trasnformar o manual em digital</h3>
-      </div>
-      <div class="col-sm-6">
-        <img src="/images/slide/1.png" class="d-block w-100" alt="Slide 1">             
-      </div>
-    </div>
-  </section> -->
-
-
   <section id="carouselExampleIndicators" class="carousel slide carousel-dark" data-bs-ride="carousel">
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class=""
-        aria-label="Diapositivo 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Diapositivo 2"
-        class="active" aria-current="true"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Diapositivo 3"
-        class=""></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" data-bs-interval="2000"
+        class="active" aria-label="Diapositivo 1" aria-current="true"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" data-bs-interval="2000"
+        aria-label="Diapositivo 2" class=""></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" data-bs-interval="2000"
+        aria-label="Diapositivo 3" class=""></button>
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -113,10 +100,6 @@
         <img src="/Website-EBS/images/slide/1.png" class="d-block w-100" alt="Slide 1">
 
         <div class="carousel-caption d-md-block bg-white">
-          <!-- <div class="carousel-caption d-none d-md-block">
-            <h5><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Etiqueta do primeiro slide</font></font></h5>
-            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Algum conteúdo representativo de espaço reservado para o primeiro slide.</font></font></p>
-          </div> -->
           <h1>Digitalizamos sua empresa</h1>
           <h3>Buscamos trasnformar o manual em digital</h3>
         </div>
@@ -204,26 +187,6 @@
         <h4 style="margin-inline-start: 10px;">Desenvolvimento</h4>
       </div>
     </div>
-
-
-    <!-- <div class="row">
-      <div class="col-sm-6" style="
-                                     display: flex;
-                                     align-items: center;
-                                     ">
-        <h1 class=" text-light"> Desenvolvemos sistemas de informação com <b>alto desempenho</b> e <b>segurança
-            máxima</b>!
-          <br><br>Veja o gráfico que resume nossas contribuições públicas
-        </h1>
-      </div>
-      <div class="col-sm-6" style="display: flex; align-items: center">
-        <a href="https://github.com/ThiagoSousa81/" target="_blank"><img
-            src="https://raw.githubusercontent.com/ThiagoSousa81/ThiagoSousa81/main/profile-3d-contrib/profile-night-green.svg"
-            alt="Gráfico de contribuíções" style="width: 100%"></a>
-      </div>
-    </div>
- -->
-
   </section>
 
   <section id="tercery-message" class="container-fluid" style="background-color: black;padding-block: 2%">
@@ -289,7 +252,7 @@
     align-content: center;
     justify-content: center;
 ">
-          <img src="/Website-EBS/images/NewEBSLogo.png" alt="EBS Logo" class="ebs-logo" style="">
+          <img src="/images/NewEBSLogo.png" alt="EBS Logo" class="ebs-logo" style="">
         </div>
         <div class="col-md-8">
           <h1 class="mb-8">Quem Somos</h1>
@@ -381,7 +344,7 @@
         <p>Técnico em Informática<br>Desing gráfico</p>
       </div>
       <div class="col-sm-4 text-center">
-        <img src="/Website-EBS/images/NewEBSLogo.png" alt="" class="perfil">
+        <img src="/images/NewEBSLogo.png" alt="" class="perfil">
         <h3>Felipe Buri</h3>
         <p>Dev. Front-End</p>
       </div>
@@ -390,10 +353,11 @@
 
 
 
-  <section id="applications" class="jumbotron text-center mycss slide" style="margin-block: 0px; padding-block: 5px">
-    <div class="row" style="max-width: 100%;">
+  <section id="applications" class="jumbotron text-center mycss slide container-fluid"
+    style="margin-block: 0px; padding-block: 5px;">
+    <div class="row">
       <div class="col-sm-6 bg-dark"
-        style="display: flex;justify-content: center;align-items: center;flex-direction: column;border-style: double;">
+        style="display: flex; justify-content: center; align-items: center; flex-direction: column; border-style: double;">
         <h4 class="text-center text-white">A EBS Security Systems também desenvolve projetos e métodos científicos
           para melhorar a
           cibersegurança</h4>
@@ -440,7 +404,9 @@
           </a>
           <p class="footer-description">Trabalhando árduamente pela segurança cibernética.</p>
           <!-- Place this tag where you want the button to render. -->
-          <span></span>
+          <a class="github-button" href="https://github.com/EBS-Security-Systems"
+            data-color-scheme="no-preference: dark_high_contrast; light: dark_high_contrast; dark: dark_high_contrast;"
+            data-size="large" aria-label="Follow @EBS-Security-Systems on GitHub">Follow @EBS-Security-Systems</a>
         </div>
         <div class="col-sm-4">
           <!-- <h3 class="footer-heading">Navegação</h3>
@@ -482,8 +448,6 @@
   <script>
     new window.VLibras.Widget('https://vlibras.gov.br/app');
   </script>
-
-
 </body>
 
 </html>
