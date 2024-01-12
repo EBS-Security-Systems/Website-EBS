@@ -1,5 +1,11 @@
 body {
     background-color: black;
+    margin: 0px;
+    padding: 0px;
+}
+
+section {
+  margin-inline: 5px;
 }
 
 .mycss{
