@@ -11,11 +11,329 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Place this tag in your head or just before your close body tag. -->
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <script async="" defer="" src="https://buttons.github.io/buttons.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="chrome-extension://mdnleldcmiljblolnjhpnblkcekpdkpa/libs/customElements.js"
+    class="__REQUESTLY__SCRIPT"></script>
   <link href="/Website-EBS/css/styl.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <style>
+    [vw] [vw-access-button] {
+      display: none;
+      flex-direction: row-reverse;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      overflow: hidden;
+      position: absolute;
+      border-radius: 8px;
+      transition: all .5s ease;
+      right: 0;
+      left: auto
+    }
+
+    [vw] [vw-access-button] img {
+      max-height: 40px;
+      transition: all .5s ease;
+      border-radius: 8px;
+      opacity: 1 !important;
+      visibility: visible !important
+    }
+
+    [vw] [vw-access-button] .access-button {
+      width: 40px;
+      height: 40px;
+      z-index: 1
+    }
+
+    [vw] [vw-access-button] .pop-up {
+      position: absolute;
+      height: 40px;
+      min-width: 150px;
+      z-index: 0;
+      left: 0;
+      right: auto
+    }
+
+    [vw] [vw-access-button]:hover {
+      width: 200px
+    }
+
+    [vw] [vw-access-button].isLeft {
+      flex-direction: row;
+      left: 0;
+      right: auto
+    }
+
+    [vw] [vw-access-button].isLeft .pop-up {
+      left: auto;
+      right: 0
+    }
+
+    [vw] [vw-access-button].isTopOrBottom:hover {
+      bottom: -20px;
+      top: 0;
+      margin-right: -80px
+    }
+
+    [vw] [vw-access-button].active {
+      display: flex
+    }
+  </style>
+  <style>
+    [vw].left [vw-plugin-wrapper] {
+      float: left
+    }
+
+    [vw] [vw-plugin-wrapper] {
+      position: relative;
+      display: none;
+      width: 300px;
+      height: 100%;
+      float: right;
+      background: white;
+      -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+      border-radius: 12px;
+      -moz-border-radius: 12px;
+      -webkit-border-radius: 12px
+    }
+
+    [vw] [vw-plugin-wrapper].active {
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: column;
+      -webkit-flex-direction: column;
+      height: 450px;
+      max-width: 100%;
+      min-height: 100%
+    }
+  </style>
+  <style>
+    [vw] html,
+    [vw] body,
+    [vw] div,
+    [vw] span,
+    [vw] applet,
+    [vw] object,
+    [vw] iframe,
+    [vw] h1,
+    [vw] h2,
+    [vw] h3,
+    [vw] h4,
+    [vw] h5,
+    [vw] h6,
+    [vw] p,
+    [vw] blockquote,
+    [vw] pre,
+    [vw] a,
+    [vw] abbr,
+    [vw] acronym,
+    [vw] address,
+    [vw] big,
+    [vw] cite,
+    [vw] code,
+    [vw] del,
+    [vw] dfn,
+    [vw] em,
+    [vw] img,
+    [vw] ins,
+    [vw] kbd,
+    [vw] q,
+    [vw] s,
+    [vw] samp,
+    [vw] small,
+    [vw] strike,
+    [vw] strong,
+    [vw] sub,
+    [vw] sup,
+    [vw] tt,
+    [vw] var,
+    [vw] b,
+    [vw] u,
+    [vw] i,
+    [vw] center,
+    [vw] dl,
+    [vw] dt,
+    [vw] dd,
+    [vw] ol,
+    [vw] ul,
+    [vw] li,
+    [vw] fieldset,
+    [vw] form,
+    [vw] label,
+    [vw] legend,
+    [vw] table,
+    [vw] caption,
+    [vw] tbody,
+    [vw] tfoot,
+    [vw] thead,
+    [vw] tr,
+    [vw] th,
+    [vw] td,
+    [vw] article,
+    [vw] aside,
+    [vw] canvas,
+    [vw] details,
+    [vw] embed,
+    [vw] figure,
+    [vw] figcaption,
+    [vw] footer,
+    [vw] header,
+    [vw] hgroup,
+    [vw] menu,
+    [vw] nav,
+    [vw] output,
+    [vw] ruby,
+    [vw] section,
+    [vw] summary,
+    [vw] time,
+    [vw] mark,
+    [vw] audio,
+    [vw] video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+      display: block
+    }
+
+    [vw] article,
+    [vw] aside,
+    [vw] details,
+    [vw] figcaption,
+    [vw] figure,
+    [vw] footer,
+    [vw] header,
+    [vw] hgroup,
+    [vw] menu,
+    [vw] nav,
+    [vw] section {
+      display: block
+    }
+
+    [vw] img {
+      width: unset
+    }
+
+    [vw] body {
+      line-height: 1
+    }
+
+    [vw] ol,
+    [vw] ul {
+      list-style: none
+    }
+
+    [vw] blockquote,
+    [vw] q {
+      quotes: none
+    }
+
+    [vw] blockquote:before,
+    [vw] blockquote:after,
+    [vw] q:before,
+    [vw] q:after {
+      content: '';
+      content: none
+    }
+
+    [vw] table {
+      border-collapse: collapse;
+      border-spacing: 0
+    }
+  </style>
+  <style>
+    @media (max-width: 450px) {
+      div[vw] canvas {
+        min-height: unset !important;
+        min-width: unset !important;
+        -webkit-filter: blur(0px);
+        -moz-filter: blur(0px);
+        -ms-filter: blur(0px);
+        -o-filter: blur(0px);
+        filter: blur(0px);
+        min-height: calc(0.35 * 680px) !important;
+        min-width: calc(0.35 * 420px) !important
+      }
+
+      div[vw] [vw-plugin-wrapper].active {
+        height: 350px !important;
+        width: 210px !important
+      }
+    }
+
+    div[vw] {
+      position: fixed;
+      max-width: 95vw;
+      min-height: 40px;
+      min-width: 40px;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 2147483647 !important;
+      display: none;
+      font-family: 'Rawline', Verdana, sans-serif !important;
+      color: #000;
+      line-height: 1.3;
+      font-size: 16px;
+      margin: 10px !important
+    }
+
+    div[vw].enabled {
+      display: block
+    }
+
+    div[vw].active {
+      margin-top: -285px
+    }
+
+    div[vw].maximize {
+      top: 6vh;
+      left: 6vh;
+      right: 6vh;
+      bottom: 6vh;
+      max-width: initial;
+      margin-top: 0
+    }
+
+    div[vw].left {
+      left: 0;
+      right: initial
+    }
+
+    div[vw] #gameContainer {
+      position: absolute !important;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto !important;
+      width: 100%;
+      height: calc(100% - 80px);
+      overflow: hidden;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+      border-radius: 0px;
+      background: none !important
+    }
+
+    div[vw] #gameContainer canvas {
+      min-height: calc(0.7 * 450px);
+      min-width: calc(0.9 * 300px);
+      height: 100%;
+      width: 100%;
+      -webkit-filter: blur(0px);
+      -moz-filter: blur(0px);
+      -ms-filter: blur(0px);
+      -o-filter: blur(0px);
+      filter: blur(0px)
+    }
+  </style>
 </head>
 
 <body>
@@ -99,15 +417,15 @@
 
   <section id="carouselExampleIndicators" class="carousel slide carousel-dark" data-bs-ride="carousel">
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-        aria-label="Diapositivo 1" aria-current="true"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class=""
+        aria-label="Diapositivo 1"></button>
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Diapositivo 2"
-        class=""></button>
+        class="active" aria-current="true"></button>
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Diapositivo 3"
         class=""></button>
     </div>
     <div class="carousel-inner">
-      <div class="carousel-item active">
+      <div class="carousel-item">
 
         <img src="/Website-EBS/images/slide/1.png" class="d-block w-100" alt="Slide 1">
 
@@ -120,7 +438,7 @@
           <h3>Buscamos trasnformar o manual em digital</h3>
         </div>
       </div>
-      <div class="carousel-item">
+      <div class="carousel-item active">
         <img src="/Website-EBS/images/slide/2.png" class="d-block w-100" alt="Slide 2">
         <div class="carousel-caption d-md-block bg-white">
           <h1>Desenvolvemos de tudo</h1>
@@ -231,7 +549,7 @@
       Como podemos melhorar seu negócio?
     </h1>
     <h3 class="text-center text-light">
-      Entre em <a href="#footer">contato</a> para saber mais
+      Entre em <a href="#footer" class="text-white">contato</a> para saber mais
     </h3>
     <div class="container-fluid row">
       <div class="col-sm-4 bg-white">
@@ -239,7 +557,8 @@
           Website corporativo
         </h2>
         <p class="text-justify">
-          Melhore sua presença digital para clientes conhecerem melhor sobre seu negócio com um website corporativo com informações de contato e
+          Melhore sua presença digital para clientes conhecerem melhor sobre seu negócio com um website corporativo com
+          informações de contato e
           páginas de conversão.
         </p>
 
@@ -389,8 +708,9 @@
 
 
   <section id="applications" class="jumbotron text-center mycss slide" style="margin-block: 0px; padding-block: 5px">
-    <div class="row">
-      <div class="col-sm-6 bg-dark" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+    <div class="row" style="max-width: 100%;">
+      <div class="col-sm-6 bg-dark"
+        style="display: flex;justify-content: center;align-items: center;flex-direction: column;border-style: double;">
         <h4 class="text-center text-white">A EBS Security Systems também desenvolve projetos e métodos científicos
           para melhorar a
           cibersegurança</h4>
@@ -437,9 +757,7 @@
           </a>
           <p class="footer-description">Trabalhando árduamente pela segurança cibernética.</p>
           <!-- Place this tag where you want the button to render. -->
-          <a class="github-button" href="https://github.com/EBS-Security-Systems"
-            data-color-scheme="no-preference: dark_high_contrast; light: dark_high_contrast; dark: dark_high_contrast;"
-            data-size="large" aria-label="Follow @EBS-Security-Systems on GitHub">Follow @EBS-Security-Systems</a>
+          <span></span>
         </div>
         <div class="col-sm-4">
           <!-- <h3 class="footer-heading">Navegação</h3>
@@ -455,7 +773,8 @@
             <li>E-mail: <a href="mailto:thiagosousa81@gmail.com">thiagosousa81@gmail.com</a></li>
             <li>WhatsApp: <a href="https://wa.me/557588583604" target="_blank" rel="noopener noreferrer">+55 75
                 8858-3604</a></li>
-            <li>Instagram: <a href="https://www.instagram.com/ebs.dev" target="_blank" rel="noopener noreferrer">@ebs.dev</a></li>
+            <li>Instagram: <a href="https://www.instagram.com/ebs.dev" target="_blank"
+                rel="noopener noreferrer">@ebs.dev</a></li>
           </ul>
         </div>
       </div>
@@ -475,6 +794,9 @@
   <script>
     new window.VLibras.Widget('https://vlibras.gov.br/app');
   </script>
+
+
+
 </body>
 
 </html>
