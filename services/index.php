@@ -76,7 +76,7 @@
           <p class="card-text text-justify">Apresente o seu negócio aos clientes com um website institucional,
             fornecendo informações de contato e páginas de conversão.
           </p>
-          <a href="#" class="btn btn-dark">Ver em tela inteira</a>
+          <a href="#" class="btn btn-dark">Tela inteira</a>
           <a href="#" class="btn btn-success">Adcionar ao carrinho</a>
         </div>
       </div>
@@ -84,13 +84,13 @@
       <!-- Bloco 2 -->
       <div class="card col-sm-4 bg-white">
         <div class="card-body">
-          <iframe src="/error/404/" class="w-100"></iframe>
+          <iframe src="/services/agenda/" class="w-100"></iframe>
           <h4 class="card-title">Agenda Online</h4>
           <p class="card-text text-justify">Gerencie os horários de forma eficiente com um sistema de agendamento
             automatizado, perfeito para barbearias,
             salões de beleza e lava-jatos.
           </p>
-          <a href="#" class="btn btn-dark">Ver em tela inteira</a>
+          <a href="#" class="btn btn-dark">Tela inteira</a>
           <a href="#" class="btn btn-success">Adcionar ao carrinho</a>
         </div>
       </div>
@@ -103,7 +103,7 @@
           <p class="card-text text-justify">Venda seus produtos pela internet com uma loja integrada a cadastros de
             clientes e controle de produtos.
           </p>
-          <a href="#" class="btn btn-dark">Ver em tela inteira</a>
+          <a href="#" class="btn btn-dark">Tela inteira</a>
           <a href="#" class="btn btn-success">Adcionar ao carrinho</a>
         </div>
       </div>
@@ -111,12 +111,12 @@
       <!-- Bloco 4 -->
       <div class="card col-sm-4 bg-white">
         <div class="card-body">
-          <iframe src="/error/404/" class="w-100"></iframe>
+          <iframe src="/services/sge/" class="w-100"></iframe>
           <h4 class="card-title">Sistemas de Gestão</h4>
           <p class="card-text text-justify">Tenha um sistema de gestão sob medida para seu negócio. Eficaz para
             controlar clientes, produtos, serviços e muito mais.
           </p>
-          <a href="#" class="btn btn-dark">Ver em tela inteira</a>
+          <a href="#" class="btn btn-dark">Tela inteira</a>
           <a href="#" class="btn btn-success">Adcionar ao carrinho</a>
         </div>
       </div>
@@ -129,7 +129,7 @@
           <p class="card-text text-justify">Acesse seus dados de aplicativos em dispositivos móveis com integração entre
             todos os nossos sistemas através de APIs e muito mais.
           </p>
-          <a href="#" class="btn btn-dark">Ver em tela inteira</a>
+          <a href="#" class="btn btn-dark">Tela inteira</a>
           <a href="#" class="btn btn-success">Adcionar ao carrinho</a>
         </div>
       </div>
@@ -143,7 +143,7 @@
             recursos de interação social. Preparamos tudo com segurança de
             assinatura digital.
           </p>
-          <a href="#" class="btn btn-dark">Ver em tela inteira</a>
+          <a href="#" class="btn btn-dark">Tela inteira</a>
           <a href="#" class="btn btn-success">Adcionar ao carrinho</a>
         </div>
       </div>
@@ -151,12 +151,12 @@
       <!-- Bloco 7 -->
       <div class="card col-sm-4 bg-white">
         <div class="card-body">
-          <iframe src="/error/404/" class="w-100"></iframe>
+          <iframe src="https://www.tinkercad.com/things/g1YEO2wkobM/viewel" class="w-100"></iframe>
           <h4 class="card-title">Automações IoT</h4>
           <p class="card-text text-justify">Desenvolvemos produtos integrados a banco de dados online e equipamentos
             específicos para suas necessidades.
           </p>
-          <a href="#" class="btn btn-dark">Ver em tela inteira</a>
+          <a href="#" class="btn btn-dark">Tela inteira</a>
           <a href="#" class="btn btn-success">Adcionar ao carrinho</a>
         </div>
       </div>
@@ -169,7 +169,7 @@
           <p class="card-text text-justify">Automatize processos web, como transferência de dados do Excel para sistemas
             web e muito mais.
           </p>
-          <a href="#" class="btn btn-dark">Ver em tela inteira</a>
+          <a href="#" class="btn btn-dark">Tela inteira</a>
           <a href="#" class="btn btn-success">Adcionar ao carrinho</a>
         </div>
       </div>
@@ -183,7 +183,7 @@
           <p class="card-text text-justify">Caso ainda não tenha encontrado o que procura, entre em contato conosco!
             Faremos de tudo para suprir a necessidade de seu negócio.
           </p>
-          <a href="#" class="btn btn-dark">Ver em tela inteira</a>
+          <a href="#" class="btn btn-dark">Tela inteira</a>
           <a href="#" class="btn btn-success">Adcionar ao carrinho</a>
         </div>
       </div>
