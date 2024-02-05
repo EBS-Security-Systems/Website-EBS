@@ -32,10 +32,10 @@
 
 <body style="max-width: 100%">
 
-  <?php include "../header.html" ?>
+  <?php include "../header.php" ?>
 
   <!-- Início do conteúdo da página -->
-  <div class="p-5">
+  <div class="">
     <section class="container-fluid bg-white p-3 rounded">
 
       <h1 class="text-center">Política de Privacidade</h1>
@@ -101,7 +101,7 @@
     </section>
   </div>
   <!-- Fim do conteúdo da página -->
-  <?php include "../footer.html" ?>
+  <?php include "../footer.php" ?>
   <div vw class="enabled">
     <div vw-access-button class="active"></div>
     <div vw-plugin-wrapper>
