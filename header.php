@@ -1,3 +1,17 @@
+<?php
+require "php/crud.php";
+$cls = new database();
+
+$link = $cls->GetLinkMySQLI();
+
+ini_set('session.cookie_domain', '.ebs-systems.epizy.com');
+// Configurando cookie como seguro (apenas em conexões HTTPS)
+ini_set('session.cookie_secure', 1);
+// Configurando o caminho do cookie para ser acessível em todos os subdomínios
+ini_set('session.cookie_path', '/');
+session_start();
+
+?>
 <header id="header">
   <div style="background-image: linear-gradient(black, green, black);">
     <div class="row" style="max-width: 100%;">
@@ -34,6 +48,16 @@
         <li class="nav-item"><a class="nav-link" href="https://thiagosousa81.wordpress.com/" target="_blank"
             rel="noopener noreferrer">Sobre</a></li>
       </ul>
+      <?php
+
+      if (isset($_SESSION['ID_USER'])) {
+        $query = mysqli_query($link, "SELECT * FROM USER WHERE ID_USER = " . $_SESSION['ID_USER']);
+        $User = mysqli_fetch_array($query);
+        echo '<span class="badge bg-success">Logado como @' . base64_decode($User['ARROBA_USER']) . '</span>';
+      } else {
+        echo '<span class="badge bg-danger">Não logado</span>';
+      }
+      ?>
     </div>
   </div>
 </nav>
