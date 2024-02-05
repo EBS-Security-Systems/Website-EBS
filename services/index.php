@@ -32,7 +32,7 @@
 
 <body>
   <!--A aplicação será mostrada aqui-->
-  <?php include "../header.html" ?>
+  <?php include "../header.php" ?>
 
   <section id="applications" class="jumbotron text-center mycss slide" style="margin-block: 0px; padding-block: 5px">
     <h3 style="
@@ -69,7 +69,7 @@
     <h1 class="text-center text-light">Como podemos impulsionar o seu negócio?</h1>
     <div class="container-fluid row">
       <!-- Bloco 1 -->
-      <div class="card col-sm-4 bg-white">
+      <div class="card col-sm-4 bg-white mt-1">
         <div class="card-body">
           <iframe src="/services/website/" class="w-100"></iframe>
           <h4 class="card-title">Website Corporativo</h4>
@@ -82,7 +82,7 @@
       </div>
 
       <!-- Bloco 2 -->
-      <div class="card col-sm-4 bg-white">
+      <div class="card col-sm-4 bg-white mt-1">
         <div class="card-body">
           <iframe src="/services/agenda/" class="w-100"></iframe>
           <h4 class="card-title">Agenda Online</h4>
@@ -96,7 +96,7 @@
       </div>
 
       <!-- Bloco 3 -->
-      <div class="card col-sm-4 bg-white">
+      <div class="card col-sm-4 bg-white mt-1">
         <div class="card-body">
           <iframe src="/services/online_store" class="w-100"></iframe>
           <h4 class="card-title">Loja Virtual</h4>
@@ -109,7 +109,7 @@
       </div>
 
       <!-- Bloco 4 -->
-      <div class="card col-sm-4 bg-white">
+      <div class="card col-sm-4 bg-white mt-1">
         <div class="card-body">
           <iframe src="/services/sge/" class="w-100"></iframe>
           <h4 class="card-title">Sistemas de Gestão</h4>
@@ -122,7 +122,7 @@
       </div>
 
       <!-- Bloco 5 -->
-      <div class="card col-sm-4 bg-white">
+      <div class="card col-sm-4 bg-white mt-1">
         <div class="card-body">
           <iframe src="/error/404/" class="w-100"></iframe>
           <h4 class="card-title">Integração entre Aplicações</h4>
@@ -135,7 +135,7 @@
       </div>
 
       <!-- Bloco 6 -->
-      <div class="card col-sm-4 bg-white">
+      <div class="card col-sm-4 bg-white mt-1">
         <div class="card-body">
           <iframe src="/services/blog/" class="w-100"></iframe>
           <h4 class="card-title">Aplicações de Mídias Sociais</h4>
@@ -149,7 +149,7 @@
       </div>
 
       <!-- Bloco 7 -->
-      <div class="card col-sm-4 bg-white">
+      <div class="card col-sm-4 bg-white mt-1">
         <div class="card-body">
           <iframe src="https://www.tinkercad.com/things/g1YEO2wkobM/viewel" class="w-100"></iframe>
           <h4 class="card-title">Automações IoT</h4>
@@ -162,7 +162,7 @@
       </div>
 
       <!-- Bloco 8 -->
-      <div class="card col-sm-4 bg-white">
+      <div class="card col-sm-4 bg-white mt-1">
         <div class="card-body">
           <iframe src="/error/404/" class="w-100"></iframe>
           <h4 class="card-title">Automações para Web</h4>
@@ -176,7 +176,7 @@
 
 
       <!-- Bloco 9 -->
-      <div class="card col-sm-4 bg-white">
+      <div class="card col-sm-4 bg-white mt-1">
         <div class="card-body">
           <iframe src="/error/404/" class="w-100"></iframe>
           <h4 class="card-title">Pesquisa personalizada</h4>
@@ -231,7 +231,7 @@
     </div>
   </section>
 
-  <?php include "../footer.html" ?>
+  <?php include "../footer.php" ?>
   <div vw class="enabled">
     <div vw-access-button class="active"></div>
     <div vw-plugin-wrapper>
